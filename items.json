@@ -1,0 +1,237 @@
+[
+  {
+    "name": "Wooden Sword",
+    "rarity": "common",
+    "type": "weapon",
+    "description": "Pedang kayu ringan untuk pemula.",
+    "image": "https://files.catbox.moe/9o2jrg.jpg"
+  },
+  {
+    "name": "Old Dagger",
+    "rarity": "common",
+    "type": "weapon",
+    "description": "Belati usang tapi masih tajam.",
+    "image": "https://files.catbox.moe/i6eokq.jpg"
+  },
+  {
+    "name": "Worn Boots",
+    "rarity": "common",
+    "type": "armor",
+    "description": "Sepatu kulit bekas yang cocok untuk perjalanan.",
+    "image": "https://files.catbox.moe/0l60y7.jpg"
+  },
+  {
+    "name": "Torn Cloak",
+    "rarity": "common",
+    "type": "armor",
+    "description": "Jubah robek yang pernah digunakan oleh penyihir pemula.",
+    "image": "https://files.catbox.moe/9izanw.jpg"
+  },
+  {
+    "name": "Rusty Shield",
+    "rarity": "common",
+    "type": "shield",
+    "description": "Perisai karatan, tapi masih bisa menahan serangan ringan.",
+    "image": "https://files.catbox.moe/susmaw.jpg"
+  },
+  {
+    "name": "Apprentice Staff",
+    "rarity": "common",
+    "type": "weapon",
+    "description": "Tongkat sihir pemula dengan kekuatan terbatas.",
+    "image": "https://files.catbox.moe/9jhjue.jpg"
+  },
+  {
+    "name": "Leather Gloves",
+    "rarity": "common",
+    "type": "armor",
+    "description": "Sarung tangan biasa yang nyaman digunakan.",
+    "image": "https://files.catbox.moe/p9u40p.jpg"
+  },
+  {
+    "name": "Simple Bow",
+    "rarity": "common",
+    "type": "bow",
+    "description": "Busur sederhana dari kayu ringan.",
+    "image": "https://files.catbox.moe/uhmky7.jpg"
+  },
+  {
+    "name": "Hunter’s Hat",
+    "rarity": "common",
+    "type": "armor",
+    "description": "Topi berburu tua dari kulit rusa.",
+    "image": "https://files.catbox.moe/2wpqdl.jpg"
+  },
+  {
+    "name": "Rookie's Blade",
+    "rarity": "common",
+    "type": "weapon",
+    "description": "Pedang milik petarung baru yang bercita-cita tinggi.",
+    "image": "https://files.catbox.moe/jmsy8b.jpg"
+  },
+
+
+  {
+    "name": "Crystal Sword",
+    "rarity": "rare",
+    "type": "weapon",
+    "description": "Pedang dengan inti kristal magis.",
+    "image": "https://files.catbox.moe/b63o7m.jpg"
+  },
+  {
+    "name": "Ancient Shield",
+    "rarity": "rare",
+    "type": "shield",
+    "description": "Perisai dari zaman kuno dengan ukiran misterius.",
+    "image": "https://files.catbox.moe/fecacj.jpg"
+  },
+  {
+    "name": "Silver Bow",
+    "rarity": "rare",
+    "type": "bow",
+    "description": "Busur perak yang ringan dan presisi tinggi.",
+    "image": "https://files.catbox.moe/go8fln.jpg"
+  },
+  {
+    "name": "Mystic Robe",
+    "rarity": "rare",
+    "type": "armor",
+    "description": "Jubah penyihir dengan aura magis.",
+    "image": "https://files.catbox.moe/rii7nu.jpg"
+  },
+  {
+    "name": "Flame Wand",
+    "rarity": "rare",
+    "type": "weapon",
+    "description": "Tongkat sihir dengan kekuatan api.",
+    "image": "https://files.catbox.moe/wtvep3.jpg"
+  },
+  {
+    "name": "Enchanted Gloves",
+    "rarity": "rare",
+    "type": "armor",
+    "description": "Sarung tangan dengan sihir pelindung.",
+    "image": "https://files.catbox.moe/rrtzaa.jpg"
+  },
+  {
+    "name": "Dragon Fang Dagger",
+    "rarity": "rare",
+    "type": "weapon",
+    "description": "Belati terbuat dari taring naga.",
+    "image": "https://files.catbox.moe/jyfr40.jpg"
+  },
+  {
+    "name": "Assassin Hood",
+    "rarity": "rare",
+    "type": "armor",
+    "description": "Penutup kepala untuk penyusup bayangan.",
+    "image": "https://files.catbox.moe/9udw1v.jpg"
+  },
+  {
+    "name": "Elven Boots",
+    "rarity": "rare",
+    "type": "armor",
+    "description": "Sepatu ringan milik kaum elf.",
+    "image": "https://files.catbox.moe/szui7u.jpg"
+  },
+
+  {
+    "name": "Sword of the Fallen King",
+    "rarity": "epic",
+    "type": "weapon",
+    "description": "Pedang milik raja yang ditakdirkan untuk bangkit kembali.",
+    "image": "https://files.catbox.moe/ayja3k.jpg"
+  },
+  {
+    "name": "Phoenix Cloak",
+    "rarity": "epic",
+    "type": "armor",
+    "description": "Jubah yang membara seperti api burung phoenix.",
+    "image": "https://files.catbox.moe/4fgktx.jpg"
+  },
+  {
+    "name": "Void Staff",
+    "rarity": "epic",
+    "type": "weapon",
+    "description": "Tongkat pengendali kekosongan.",
+    "image": "https://files.catbox.moe/3ve08t.jpg"
+  },
+  {
+    "name": "Runed Chestplate",
+    "rarity": "epic",
+    "type": "armor",
+    "description": "Baju zirah dengan ukiran sihir kuno.",
+    "image": "https://files.catbox.moe/vgc6ln.jpg"
+  },
+  {
+    "name": "Abyssal Axe",
+    "rarity": "epic",
+    "type": "weapon",
+    "description": "Kapak dari dunia bawah, berat dan kuat.",
+    "image": "https://files.catbox.moe/khdk94.jpg"
+  },
+  {
+    "name": "Stormcaller Bow",
+    "rarity": "epic",
+    "type": "bow",
+    "description": "Busur pemanggil petir dari langit.",
+    "image": "https://files.catbox.moe/wghm3g.jpg"
+  },
+  {
+    "name": "Titan Boots",
+    "rarity": "epic",
+    "type": "armor",
+    "description": "Sepatu para raksasa.",
+    "image": "https://files.catbox.moe/3ibeiv.jpg"
+  },
+  {
+    "name": "Gloves of Reality",
+    "rarity": "epic",
+    "type": "armor",
+    "description": "Sarung tangan pengendali dimensi.",
+    "image": "https://files.catbox.moe/s09o0h.jpg"
+  },
+
+  {
+    "name": "Shusui Blade",
+    "rarity": "legendary",
+    "type": "sword",
+    "description": "Pedang legendaris berlapis hitam yang dikatakan tidak bisa dipatahkan.",
+    "image": "https://files.catbox.moe/9vqwps.jpg"
+  },
+  {
+    "name": "Enma Blade",
+    "rarity": "legendary",
+    "type": "sword",
+    "description": "Pedang legendaris yang dapat menyerap haki pemiliknya secara paksa.",
+    "image": "https://files.catbox.moe/b06x63.jpg"
+  },
+  {
+    "name": "Ryuma Katana",
+    "rarity": "legendary",
+    "type": "sword",
+    "description": "Katana dari pendekar samurai undead, tajam dan sangat kuat.",
+    "image": "https://deyk7xhr3o4wv.cloudfront.net/p76qvs%2Fpreview%2F68532126%2Fmain_large.jpg?response-content-disposition=inline%3Bfilename%3D%22main_large.jpg%22%3B&response-content-type=image%2Fjpeg"
+  },
+  {
+    "name": "Black Recurve Bow",
+    "rarity": "legendary",
+    "type": "bow",
+    "description": "Busur hitam terkutuk yang dapat menembus pertahanan apapun.",
+    "image": "https://i.postimg.cc/zGvypZbZ/HMu-Px-Xrhnq-M.jpg"
+  },
+  {
+    "name": "Phantom Archer’s Bow",
+    "rarity": "legendary",
+    "type": "bow",
+    "description": "Busur gaib yang dapat menembak tanpa suara dan menembus dimensi.",
+    "image": "https://i.postimg.cc/B66vJRDc/Uqtu-Xrt-VPha.jpg"
+  },
+  {
+    "name": "Godslayer Blade",
+    "rarity": "legendary",
+    "type": "sword",
+    "description": "Pedang kuno yang pernah digunakan untuk menumbangkan dewa.",
+    "image": "https://i.postimg.cc/hjk6j764/dai-Yr-Ln-QQGR.jpg"
+  }
+]
