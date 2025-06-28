@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Market - Toko RPG Abad Pertengahan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="balance">
+      <span>💰</span> 14,800 FixCoin
+    </div>
+    <img src="https://i.postimg.cc/Kz0pZ1d2/1751119618178-jpg.png" alt="Market Banner" class="banner">
+    <h1 class="title">PIXEL MARKET RPG</h1>
+  </div>
+
+  <div class="container">
+    <div class="shop-description">
+      SELAMAT DATANG DI TOKO PETUALANG! TEMUKAN SENJATA DAN PERLENGKAPAN UNTUK PETUALANGANMU
+    </div>
+    <div class="items-grid" id="items-container">
+      <!-- Diisi oleh JS -->
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Pixel Market RPG - Toko Abad Pertengahan
+  </div>
+
+<script>
+  let originalItems = []; // Data item asli
+  let tradingItems = [];  // Data item aktif (berubah-ubah)
+
+  function formatCurrency(amount) {
+    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function translateRarity(rarity) {
+    const translations = {
+      "common": "Biasa",
+      "biasa": "Biasa",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legend": "Legend"
+    };
+    return translations[rarity.toLowerCase()] || rarity;
+  }
+
+  function getRandomPercentage(min = -15, max = 20) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function updateTradingPrices() {
+    tradingItems = originalItems.map(item => {
+      if (['epic', 'legend'].includes(item.rarity.toLowerCase())) {
+        const changePercent = getRandomPercentage();
+        const changeAmount = Math.floor(item.price * (changePercent / 100));
+        let newPrice = item.price + changeAmount;
+        if (newPrice < 1) newPrice = 1;
+
+        return { ...item, price: newPrice };
+      } else {
+        return { ...item }; // Tidak berubah
+      }
+    });
+
+    displayItems(tradingItems);
+  }
+
+  function displayItems(items) {
+    const container = document.getElementById('items-container');
+    container.innerHTML = '';
+
+    items.forEach(item => {
+      const itemCard = document.createElement('div');
+      itemCard.className = 'item-card';
+
+      const rarityClass = `rarity-${item.rarity.toLowerCase()}`;
+      const translatedRarity = translateRarity(item.rarity);
+
+      itemCard.innerHTML = `
+        <div class="item-rarity ${rarityClass}">${translatedRarity}</div>
+        <img src="${item.image}" alt="${item.name}" class="item-image">
+        <h3 class="item-name">${item.name}</h3>
+        <div class="item-price"><span>Harga:</span> ${formatCurrency(item.price)} FixCoin</div>
+        <div class="item-actions">
+          <button class="btn btn-buy" onclick="buyItem('${item.name}')">Beli 🛒</button>
+          <button class="btn btn-sell" onclick="sellItem('${item.name}')">Jual 💰</button>
+        </div>
+      `;
+
+      container.appendChild(itemCard);
+    });
+  }
+
+  function buyItem(itemName) {
+    alert(`🛒 Item "${itemName}" berhasil dibeli!`);
+  }
+
+  function sellItem(itemName) {
+    alert(`💰 Item "${itemName}" berhasil dijual!`);
+  }
+
+  async function loadItems() {
+    try {
+      const res = await fetch('items.json');
+      const items = await res.json();
+      originalItems = items;
+      updateTradingPrices(); // render awal
+      setInterval(updateTradingPrices, 80 * 1000); // Update tiap 80 detik
+    } catch (err) {
+      console.error("Gagal memuat items.json:", err);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadItems);
+</script>
+</body>
+</html>
